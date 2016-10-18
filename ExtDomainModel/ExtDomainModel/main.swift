@@ -20,12 +20,25 @@ open class TestMe {
     }
 }
 
+protocol Mathematics {
+    func add() -> Money
+    func subtract() -> Money
+}
+
+extension Double {
+    var USD: Money { return Money(amount: 10, currency: "USD")}
+    var EUR: Money { return Money(amount: 12, currency: "EUR")}
+    var GBP: Money { return Money(amount: 14, currency: "GBP")}
+    var YEN: Money { return Money(amount: 16, currency: "YEN")}
+}
+
 ////////////////////////////////////
 // Money
 //
-public struct Money {
+public struct Money: CustomStringConvertible {
     public var amount : Double
     public var currency : String
+    public var description: String { return "\(currency)" + "\(amount)"}
     
     // Convert the money to USD
     public func toUSD(amount: Double, currency: String) -> Double {
@@ -147,9 +160,10 @@ public struct Money {
 ////////////////////////////////////
 // Job
 //
-open class Job {
+open class Job: CustomStringConvertible {
     fileprivate var title : String
     fileprivate var type : JobType
+    public var description: String
     
     public enum JobType {
         case Hourly(Double)
@@ -189,10 +203,11 @@ open class Job {
 ////////////////////////////////////
 // Person
 //
-open class Person {
+open class Person: CustomStringConvertible {
     open var firstName : String = ""
     open var lastName : String = ""
     open var age : Int = 0
+    public var description: String
     
     fileprivate var _job : Job? = nil
     open var job : Job? {
@@ -242,8 +257,9 @@ open class Person {
 ////////////////////////////////////
 // Family
 //
-open class Family {
+open class Family: CustomStringConvertible {
     fileprivate var members : [Person] = []
+    public var description: String
     
     //Initializes a family requiring 2 spouses
     public init(spouse1: Person, spouse2: Person) {

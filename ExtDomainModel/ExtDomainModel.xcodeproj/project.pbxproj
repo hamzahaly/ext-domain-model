@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9DCC7F401DB580870061C86B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC7F3F1DB580870061C86B /* main.swift */; };
+		9DE8C9931DB6CF1D00C2BE15 /* ExtDomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE8C9921DB6CF1D00C2BE15 /* ExtDomainModelTests.swift */; };
+		9DE8C99A1DB6D52000C2BE15 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC7F3F1DB580870061C86B /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +27,20 @@
 /* Begin PBXFileReference section */
 		9DCC7F3C1DB580870061C86B /* ExtDomainModel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExtDomainModel; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DCC7F3F1DB580870061C86B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9DE8C9901DB6CF1D00C2BE15 /* ExtDomainModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtDomainModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DE8C9921DB6CF1D00C2BE15 /* ExtDomainModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtDomainModelTests.swift; sourceTree = "<group>"; };
+		9DE8C9941DB6CF1D00C2BE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9DCC7F391DB580870061C86B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE8C98D1DB6CF1D00C2BE15 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				9DCC7F3E1DB580870061C86B /* ExtDomainModel */,
+				9DE8C9911DB6CF1D00C2BE15 /* ExtDomainModelTests */,
 				9DCC7F3D1DB580870061C86B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				9DCC7F3C1DB580870061C86B /* ExtDomainModel */,
+				9DE8C9901DB6CF1D00C2BE15 /* ExtDomainModelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +74,15 @@
 				9DCC7F3F1DB580870061C86B /* main.swift */,
 			);
 			path = ExtDomainModel;
+			sourceTree = "<group>";
+		};
+		9DE8C9911DB6CF1D00C2BE15 /* ExtDomainModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				9DE8C9921DB6CF1D00C2BE15 /* ExtDomainModelTests.swift */,
+				9DE8C9941DB6CF1D00C2BE15 /* Info.plist */,
+			);
+			path = ExtDomainModelTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +105,23 @@
 			productReference = 9DCC7F3C1DB580870061C86B /* ExtDomainModel */;
 			productType = "com.apple.product-type.tool";
 		};
+		9DE8C98F1DB6CF1D00C2BE15 /* ExtDomainModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DE8C9971DB6CF1D00C2BE15 /* Build configuration list for PBXNativeTarget "ExtDomainModelTests" */;
+			buildPhases = (
+				9DE8C98C1DB6CF1D00C2BE15 /* Sources */,
+				9DE8C98D1DB6CF1D00C2BE15 /* Frameworks */,
+				9DE8C98E1DB6CF1D00C2BE15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtDomainModelTests;
+			productName = ExtDomainModelTests;
+			productReference = 9DE8C9901DB6CF1D00C2BE15 /* ExtDomainModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +132,10 @@
 				LastUpgradeCheck = 0800;
 				TargetAttributes = {
 					9DCC7F3B1DB580870061C86B = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					9DE8C98F1DB6CF1D00C2BE15 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -110,9 +154,20 @@
 			projectRoot = "";
 			targets = (
 				9DCC7F3B1DB580870061C86B /* ExtDomainModel */,
+				9DE8C98F1DB6CF1D00C2BE15 /* ExtDomainModelTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DE8C98E1DB6CF1D00C2BE15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9DCC7F381DB580870061C86B /* Sources */ = {
@@ -120,6 +175,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DCC7F401DB580870061C86B /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE8C98C1DB6CF1D00C2BE15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE8C99A1DB6D52000C2BE15 /* main.swift in Sources */,
+				9DE8C9931DB6CF1D00C2BE15 /* ExtDomainModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +294,32 @@
 			};
 			name = Release;
 		};
+		9DE8C9951DB6CF1D00C2BE15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ExtDomainModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamzahaly.ExtDomainModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9DE8C9961DB6CF1D00C2BE15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ExtDomainModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamzahaly.ExtDomainModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -247,6 +337,15 @@
 			buildConfigurations = (
 				9DCC7F441DB580870061C86B /* Debug */,
 				9DCC7F451DB580870061C86B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DE8C9971DB6CF1D00C2BE15 /* Build configuration list for PBXNativeTarget "ExtDomainModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DE8C9951DB6CF1D00C2BE15 /* Debug */,
+				9DE8C9961DB6CF1D00C2BE15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
