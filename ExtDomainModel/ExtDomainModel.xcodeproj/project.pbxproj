@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9DCC7F401DB580870061C86B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC7F3F1DB580870061C86B /* main.swift */; };
-		9DE8C9931DB6CF1D00C2BE15 /* ExtDomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE8C9921DB6CF1D00C2BE15 /* ExtDomainModelTests.swift */; };
 		9DE8C99A1DB6D52000C2BE15 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC7F3F1DB580870061C86B /* main.swift */; };
+		9DFB7FD71DB705840090A2B2 /* ExtDomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE8C9921DB6CF1D00C2BE15 /* ExtDomainModelTests.swift */; };
+		9DFB7FDB1DB70C8C0090A2B2 /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB7FDA1DB70C8C0090A2B2 /* MoneyTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,7 @@
 		9DE8C9901DB6CF1D00C2BE15 /* ExtDomainModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtDomainModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE8C9921DB6CF1D00C2BE15 /* ExtDomainModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtDomainModelTests.swift; sourceTree = "<group>"; };
 		9DE8C9941DB6CF1D00C2BE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DFB7FDA1DB70C8C0090A2B2 /* MoneyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				9DE8C9921DB6CF1D00C2BE15 /* ExtDomainModelTests.swift */,
 				9DE8C9941DB6CF1D00C2BE15 /* Info.plist */,
+				9DFB7FDA1DB70C8C0090A2B2 /* MoneyTests.swift */,
 			);
 			path = ExtDomainModelTests;
 			sourceTree = "<group>";
@@ -183,7 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DE8C99A1DB6D52000C2BE15 /* main.swift in Sources */,
-				9DE8C9931DB6CF1D00C2BE15 /* ExtDomainModelTests.swift in Sources */,
+				9DFB7FD71DB705840090A2B2 /* ExtDomainModelTests.swift in Sources */,
+				9DFB7FDB1DB70C8C0090A2B2 /* MoneyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +352,7 @@
 				9DE8C9961DB6CF1D00C2BE15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

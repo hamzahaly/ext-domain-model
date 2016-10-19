@@ -1,6 +1,6 @@
 //
-//  ExtDomainModelTests.swift
-//  ExtDomainModelTests
+//  MoneyTests.swift
+//  ExtDomainModel
 //
 //  Created by iGuest on 10/18/16.
 //
@@ -8,10 +8,8 @@
 
 import XCTest
 
-import ExtDomainModel
+class MoneyTests: XCTestCase {
 
-class ExtDomainModelTests: XCTestCase {
-    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,12 +19,12 @@ class ExtDomainModelTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
+
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-    
+
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
@@ -112,4 +110,15 @@ class ExtDomainModelTests: XCTestCase {
         XCTAssert(total.currency == "GBP")
     }
     
+    func testGBPDescription() {
+        let money = Money(amount: 10, currency: "GBP")
+        XCTAssert(money.description == "GBP10.0")
+    }
+    
+    func testYenExtension() {
+        let yen = 9054.YEN
+        XCTAssert(yen.description == "YEN9054.0")
+    }
+    
+
 }

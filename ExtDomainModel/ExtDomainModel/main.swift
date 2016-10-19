@@ -20,16 +20,16 @@ open class TestMe {
     }
 }
 
-protocol Mathematics {
-    func add() -> Money
-    func subtract() -> Money
-}
+//protocol Mathematics {
+//    func +() -> Money
+//    func -() -> Money
+//}
 
 extension Double {
-    var USD: Money { return Money(amount: 10, currency: "USD")}
-    var EUR: Money { return Money(amount: 12, currency: "EUR")}
-    var GBP: Money { return Money(amount: 14, currency: "GBP")}
-    var YEN: Money { return Money(amount: 16, currency: "YEN")}
+    var USD: Money { return Money(amount: self, currency: "USD")}
+    var EUR: Money { return Money(amount: self, currency: "EUR")}
+    var GBP: Money { return Money(amount: self, currency: "GBP")}
+    var YEN: Money { return Money(amount: self, currency: "YEN")}
 }
 
 ////////////////////////////////////
@@ -163,7 +163,7 @@ public struct Money: CustomStringConvertible {
 open class Job: CustomStringConvertible {
     fileprivate var title : String
     fileprivate var type : JobType
-    public var description: String
+    public var description: String { return "title: \(title) " + "JobType: \(type)"}
     
     public enum JobType {
         case Hourly(Double)
@@ -207,7 +207,7 @@ open class Person: CustomStringConvertible {
     open var firstName : String = ""
     open var lastName : String = ""
     open var age : Int = 0
-    public var description: String
+    public var description: String { return "FirstName: \(firstName) LastName: \(lastName) Age: \(age)"}
     
     fileprivate var _job : Job? = nil
     open var job : Job? {
@@ -259,7 +259,17 @@ open class Person: CustomStringConvertible {
 //
 open class Family: CustomStringConvertible {
     fileprivate var members : [Person] = []
-    public var description: String
+    public var description: String { return getFamily()}
+    
+    func getFamily() -> String {
+        var name: String
+        var family: String = ""
+        for member in members {
+            name = member.firstName + member.lastName
+            family += "\(name) "
+        }
+        return family
+    }
     
     //Initializes a family requiring 2 spouses
     public init(spouse1: Person, spouse2: Person) {
