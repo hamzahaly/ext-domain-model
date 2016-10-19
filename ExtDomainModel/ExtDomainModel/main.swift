@@ -20,10 +20,10 @@ open class TestMe {
     }
 }
 
-//protocol Mathematics {
-//    func +() -> Money
-//    func -() -> Money
-//}
+protocol Mathematics {
+    func add(_ to: Money) -> Money
+    func subtract(_ from: Money) -> Money
+}
 
 extension Double {
     var USD: Money { return Money(amount: self, currency: "USD")}
@@ -35,7 +35,7 @@ extension Double {
 ////////////////////////////////////
 // Money
 //
-public struct Money: CustomStringConvertible {
+public struct Money: CustomStringConvertible, Mathematics {
     public var amount : Double
     public var currency : String
     public var description: String { return "\(currency)" + "\(amount)"}
