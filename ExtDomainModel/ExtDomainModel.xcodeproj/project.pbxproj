@@ -11,6 +11,9 @@
 		9DE8C99A1DB6D52000C2BE15 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCC7F3F1DB580870061C86B /* main.swift */; };
 		9DFB7FD71DB705840090A2B2 /* ExtDomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE8C9921DB6CF1D00C2BE15 /* ExtDomainModelTests.swift */; };
 		9DFB7FDB1DB70C8C0090A2B2 /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB7FDA1DB70C8C0090A2B2 /* MoneyTests.swift */; };
+		9DFB7FE31DB7122E0090A2B2 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB7FE21DB7122E0090A2B2 /* PersonTests.swift */; };
+		9DFB7FE51DB7123D0090A2B2 /* FamilyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB7FE41DB7123C0090A2B2 /* FamilyTests.swift */; };
+		9DFB7FE71DB712D00090A2B2 /* JobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFB7FE61DB712D00090A2B2 /* JobTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +35,9 @@
 		9DE8C9921DB6CF1D00C2BE15 /* ExtDomainModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtDomainModelTests.swift; sourceTree = "<group>"; };
 		9DE8C9941DB6CF1D00C2BE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DFB7FDA1DB70C8C0090A2B2 /* MoneyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
+		9DFB7FE21DB7122E0090A2B2 /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		9DFB7FE41DB7123C0090A2B2 /* FamilyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyTests.swift; sourceTree = "<group>"; };
+		9DFB7FE61DB712D00090A2B2 /* JobTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,9 @@
 				9DE8C9921DB6CF1D00C2BE15 /* ExtDomainModelTests.swift */,
 				9DE8C9941DB6CF1D00C2BE15 /* Info.plist */,
 				9DFB7FDA1DB70C8C0090A2B2 /* MoneyTests.swift */,
+				9DFB7FE21DB7122E0090A2B2 /* PersonTests.swift */,
+				9DFB7FE41DB7123C0090A2B2 /* FamilyTests.swift */,
+				9DFB7FE61DB712D00090A2B2 /* JobTests.swift */,
 			);
 			path = ExtDomainModelTests;
 			sourceTree = "<group>";
@@ -186,7 +195,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DE8C99A1DB6D52000C2BE15 /* main.swift in Sources */,
+				9DFB7FE51DB7123D0090A2B2 /* FamilyTests.swift in Sources */,
 				9DFB7FD71DB705840090A2B2 /* ExtDomainModelTests.swift in Sources */,
+				9DFB7FE71DB712D00090A2B2 /* JobTests.swift in Sources */,
+				9DFB7FE31DB7122E0090A2B2 /* PersonTests.swift in Sources */,
 				9DFB7FDB1DB70C8C0090A2B2 /* MoneyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

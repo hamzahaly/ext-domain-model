@@ -10,6 +10,7 @@ import Foundation
 
 print("Hello, World!")
 
+
 public func testMe() -> String {
     return "I have been tested"
 }
@@ -163,7 +164,7 @@ public struct Money: CustomStringConvertible, Mathematics {
 open class Job: CustomStringConvertible {
     fileprivate var title : String
     fileprivate var type : JobType
-    public var description: String { return "title: \(title) " + "JobType: \(type)"}
+    public var description: String { return "Title: \(title) " + "JobType: \(type)"}
     
     public enum JobType {
         case Hourly(Double)
@@ -304,3 +305,10 @@ open class Family: CustomStringConvertible {
         return hIncome
     }
 }
+
+let ted = Person(firstName: "Ted", lastName: "Neward", age: 45)
+let charlotte = Person(firstName: "Charlotte", lastName: "Neward", age: 45)
+let family = Family(spouse1: ted, spouse2: charlotte)
+print(family.description)
+print(family.description)
+

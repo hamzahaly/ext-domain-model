@@ -112,4 +112,6 @@ class ExtDomainModelTests: XCTestCase {
         XCTAssert(total.currency == "GBP")
     }
     
+    
+    
 }
